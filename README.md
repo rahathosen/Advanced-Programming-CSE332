@@ -1,2 +1,2 @@
-# Advanced-Programming-CSE332
+# Advanced-Programming-Lab-CSE332
 Lab Task
