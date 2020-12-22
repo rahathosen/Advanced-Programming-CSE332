@@ -52,7 +52,6 @@ public class App {
             x = Math.sqrt(a);
         }
         return x;
-
     }
 
     public static void main(String[] args) throws Exception {
@@ -96,7 +95,6 @@ public class App {
                 System.out.println("Thank You for My Service :)");
                 System.exit(0);
             }
-
         } while (n != 7);
     }
 }
