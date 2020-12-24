@@ -52,9 +52,16 @@ public class App {
         return hexdecnum;
     }
 
-    public static int converteHxadecimalToDecimal() {
-        
-        return
+    public static int converteHxadecimalToDecimal(String hex) {
+        String digits = "0123456789ABCDEF";
+        hex = hex.toUpperCase();
+        int val = 0;
+        for (int i = 0; i < hex.length(); i++) {
+            char c = hex.charAt(i);
+            int d = digits.indexOf(c);
+            val = 16 * val + d;
+        }
+        return val;
 
     }
 
@@ -84,6 +91,8 @@ public class App {
                 break;
 
             case 4:
+                String strhex = scanner.next();
+                System.out.println("Decimal of " + strhex + " is: " + converteHxadecimalToDecimal(strhex));
                 break;
 
             default:
