@@ -516,7 +516,9 @@ public class App {
         String lastName = scanner.next();
         char ch_first = firstName.charAt(0);
         char ch_last = lastName.charAt(0);
+        System.out.println();
         printPattern(ch_first);
+        System.out.println();
         printPattern(ch_last);
 
     }
